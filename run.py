@@ -29,19 +29,20 @@ alphabet = {
     'z': 'zulu',
 }
 
-if __name__ == '__main__':
+def infinite_shuffle(items):
     while True:
-        letter = random.choice(list(alphabet.keys()))
+        yield from random.sample(items, len(items))
 
+if __name__ == '__main__':
+    for letter, code_word in infinite_shuffle(alphabet.items()):
         try:
             answer = input(letter.upper() + ': ')
+            if answer.strip().lower() == code_word:
+                print('Right')
+            else:
+                print('Wrong:', code_word.title())
+            print()
         except EOFError:
             # quit gracefully
             print()
             break
-
-        if answer.strip().lower() == alphabet[letter]:
-            print('Right')
-        else:
-            print('Wrong:', alphabet[letter].title())
-        print()
