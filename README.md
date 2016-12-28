@@ -5,6 +5,7 @@ Learn and practice this useful skill with a simple console-based game.
 ## Getting started
 
 Clone the repository and start the game with `python run.py`.
+Requires python version 3.3 or newer.
 
 ## Gameplay
 
