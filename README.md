@@ -13,6 +13,8 @@ The game will prompt you with a random letter.
 Type the corresponding code word and press enter.
 If you get it wrong, the game will tell you the correct answer.
 
+Tip: say the code words out loud as you type them.
+
 Answers are case-*in*sensitive and some alternate spellings are allowed.
 
 To quit, just press `Ctrl+D`.
